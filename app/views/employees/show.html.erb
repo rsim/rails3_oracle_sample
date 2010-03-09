@@ -1,0 +1,33 @@
+<p>
+  <b>First name:</b>
+  <%= @employee.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @employee.last_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @employee.email %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @employee.phone_number %>
+</p>
+
+<p>
+  <b>Hire date:</b>
+  <%= @employee.hire_date %>
+</p>
+
+<p>
+  <b>Salary:</b>
+  <%= @employee.salary %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

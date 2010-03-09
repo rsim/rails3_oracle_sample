@@ -1,0 +1,21 @@
+== Rails 3 on Oracle sample application
+
+This is sample app contains several important files necessary for using Rails 3 on Oracle database using oracle database.
+
+Gemfile
+  Specifies that latest version of oracle_enhanced adapter gem and Arel gem should be used from github.
+
+config/database.yml
+  The same connection options as in Rails 2.
+
+config/initializers/oracle.rb
+  Requires lib/rails3_oracle_patches.rb (see below).
+  Sets sample several sample options for oracle_enhanced adapter in the same way as for Rails 2.
+
+lib/rails3_oracle_patches.rb 
+  Contains several patches for Rails 3 beta that are necessary for oracle_enhanced adapter.
+
+== Test connection
+
+Set connection in database.yml to standard HR schema and start Rails with "rails server".
+Test if you see list of employees when going to http://localhost:3000

@@ -1,0 +1,6 @@
+development:
+  adapter: oracle_enhanced
+  database: orcl
+  username: hr
+  password: hr
+
