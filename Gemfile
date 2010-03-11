@@ -2,7 +2,7 @@ source 'http://gemcutter.org'
 
 gem "rails", "3.0.0.beta"
 
-gem "arel", ">=0.2.1", :git => 'git://github.com/brynary/arel.git'
+gem "arel", ">=0.2.1", :git => 'git://github.com/rsim/arel.git', :branch => 'oracle'
 
 gem "ruby-oci8", ">=2.0.4"
 gem "activerecord-oracle_enhanced-adapter", ">=1.3.0.beta1", :git => 'git://github.com/rsim/oracle-enhanced.git', :branch => 'rails3'
