@@ -23,3 +23,12 @@ end
 
 # PL/SQL connection
 plsql.activerecord_class = ActiveRecord::Base
+
+# Cache column descriptions between requests.
+# Highly recommended as currently Arel is doing a lot of additional queries
+# to get table columns and primary key.
+# If this is used then you need to restart server in development environment
+# after running migrations which change table columns.
+if ['development', 'test', 'production'].include? Rails.env
+  ActiveRecord::ConnectionAdapters::OracleEnhancedAdapter.cache_columns = true
+end
