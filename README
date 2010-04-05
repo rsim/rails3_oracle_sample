@@ -3,7 +3,7 @@
 This is sample app contains several important files necessary for using Rails 3 on Oracle database using oracle database.
 
 Gemfile
-  Specifies that latest version of oracle_enhanced adapter gem and Arel gem should be used from github.
+  Specifies that latest version of oracle_enhanced adapter gem should be used from github.
 
 config/database.yml
   The same connection options as in Rails 2.
