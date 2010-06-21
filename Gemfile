@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem "rails", "3.0.0.beta4"
 
 gem "ruby-oci8", ">=2.0.4"
-gem "activerecord-oracle_enhanced-adapter", ">=1.3.0", :require => 'active_record/connection_adapters/oracle_enhanced_adapter'
+gem "activerecord-oracle_enhanced-adapter", ">=1.3.0"
 
 # optionally also use ruby-plsql
 gem "ruby-plsql", ">=0.4.3"
