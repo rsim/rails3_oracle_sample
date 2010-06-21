@@ -1,6 +1,3 @@
-# monkey patches for Rails 3 beta that are needed for oracle_enhanced adapter
-require 'rails3_oracle_patches'
-
 # it's recommended to set time zone to ensure that Oracle session time zone
 # will be the same as Ruby Time.local time zone
 ENV['TZ'] = 'Europe/Riga'
